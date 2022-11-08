@@ -74,9 +74,9 @@ public class Rover {
     @Override
     public String toString() {
         return "Rover{" +
-                "x=" + PointX +
-                ", y=" + PointY +
-                ", direction=" + direction +
+                " x = " + PointX +
+                ", y = " + PointY +
+                ", direction = " + direction +
                 '}';
     }
 }

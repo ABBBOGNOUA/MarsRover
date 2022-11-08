@@ -86,6 +86,7 @@ package fr.octo.abbo.MarsRover;
             //Then
                 assertEquals(new Rover(0,0, Nord), rover);
         }
+
     //....................... Tourner à gauche.........................
 
         @Test
@@ -143,11 +144,11 @@ package fr.octo.abbo.MarsRover;
         @Test
         public void Quand_le_Rover_recoit_une_commande_Aller_vers_louest_il_doit_conserver_sa_direction_et_avancer(){
             //Given
-            Rover rover = new Rover(0, 0, Ouest);
+                Rover rover = new Rover(0, 0, Ouest);
             //When
-            rover.avancer();
+                rover.avancer();
             //Then
-            assertEquals(new Rover(-1,0, Ouest), rover);
+                assertEquals(new Rover(-1,0, Ouest), rover);
         }
 
         @Test
@@ -163,11 +164,10 @@ package fr.octo.abbo.MarsRover;
         @Test
         public void Quand_le_Rover_recoit_une_commande_Aller_vers_le_sud_il_doit_conserver_sa_direction_et_avancer(){
             //Given
-            Rover rover = new Rover(0, 0, Sud);
+                Rover rover = new Rover(0, 0, Sud);
             //When
-            rover.avancer();
+                rover.avancer();
             //Then
-            assertEquals(new Rover(0,-1, Sud), rover);
+                assertEquals(new Rover(0,-1, Sud), rover);
         }
-
     }
